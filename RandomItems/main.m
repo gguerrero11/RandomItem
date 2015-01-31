@@ -40,6 +40,10 @@ int main(int argc, const char * argv[]) {
         
         BNRItem *itemWithName = [[BNRItem alloc] initWithItemName:@"Blue Sofa"];
         NSLog(@"%@", itemWithName);
+        
+        BNRItem *itemWithNoName = [[BNRItem alloc] init];
+        NSLog(@"%@", itemWithNoName);
+
 
         
         
