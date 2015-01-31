@@ -34,10 +34,14 @@ int main(int argc, const char * argv[]) {
         BNRItem *item = [[BNRItem alloc] initWithItemName:@"Red Sofa"
                                            valueInDollars:100
                                              serialNumber:@"A1B2C"];
-        
         // The %@ token is replaced with the result of sending
         // the description message to the corresponding argument
         NSLog(@"%@", item);
+        
+        BNRItem *itemWithName = [[BNRItem alloc] initWithItemName:@"Blue Sofa"];
+        NSLog(@"%@", itemWithName);
+
+        
         
         //Destroy the mutabe array object
         items = nil;
