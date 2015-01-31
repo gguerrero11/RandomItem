@@ -54,8 +54,9 @@
     // for "long"
     
     NSString *randomName = [NSString stringWithFormat:@"%@ %@",
-                                [randomAdjectiveList objectAtIndex:adjectiveIndex],
-                                [randomNounList objectAtIndex:nounIndex]];
+                                randomAdjectiveList[adjectiveIndex],
+                                randomNounList[nounIndex]];
+                            
     int randomValue = arc4random() % 100;
     NSString *randomSerialNumber = [NSString stringWithFormat:@"%c%c%c%c%c",
                                     '0' + arc4random() % 10,
