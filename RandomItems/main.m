@@ -44,8 +44,6 @@ int main(int argc, const char * argv[]) {
         BNRItem *itemWithNoName = [[BNRItem alloc] init];
         NSLog(@"%@", itemWithNoName);
 
-
-        
         
         //Destroy the mutabe array object
         items = nil;

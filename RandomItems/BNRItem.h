@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface BNRItem : NSObject
 {
     NSString *_itemName;
@@ -17,7 +18,18 @@
     
 }
 
+// Class Methods (with the + sign)
++ (instancetype)randomItem;
 
+- (instancetype)initWithItemName:(NSString *)name;
+
+// Instance Methods (with the - sign)
+// Designated initializer for BNRItem
+- (instancetype)initWithItemName:(NSString *)name
+                  valueInDollars:(int)value
+                    serialNumber:(NSString *)sNumber;
+
+// Setters and Getters
 - (void)setItemName: (NSString *)str;
 - (NSString *)itemName;
 
@@ -29,13 +41,6 @@
 
 - (NSDate *)dateCreated;
 
-
-// Designated initializer for BNRItem
-- (instancetype)initWithItemName:(NSString *)name
-                  valueInDollars:(int)value
-                    serialNumber:(NSString *)sNumber;
-
-- (instancetype)initWithItemName:(NSString *)name;
 
 
 @end
