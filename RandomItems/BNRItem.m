@@ -48,7 +48,7 @@
     // from 0 to 2 inclusive.
     NSInteger adjectiveIndex = arc4random() % [randomAdjectiveList count];
     NSInteger nounIndex = arc4random() % [randomNounList count];
-    NSLog(@"This is the random number in action: %d", arc4random());
+
     
     // Note that NSInteger is not an object, but a type definition
     // for "long"
