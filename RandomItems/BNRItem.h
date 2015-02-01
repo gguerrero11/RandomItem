@@ -18,6 +18,14 @@
     
 }
 
+@property BNRItem *containedItem;
+@property BNRItem *container;
+
+@property NSString *itemName;
+@property NSString *serialNumber;
+@property int valueInDollars;
+@property NSDate *dateCreated;
+
 // Class Methods (with the + sign)
 + (instancetype)randomItem;
 
@@ -28,18 +36,6 @@
 - (instancetype)initWithItemName:(NSString *)name
                   valueInDollars:(int)value
                     serialNumber:(NSString *)sNumber;
-
-// Setters and Getters
-- (void)setItemName: (NSString *)str;
-- (NSString *)itemName;
-
-- (void)setSerialNumber:(NSString *)str;
-- (NSString *)serialNumber;
-
-- (void)setValueInDollars:(int)v;
-- (int)valueInDollars;
-
-- (NSDate *)dateCreated;
 
 
 

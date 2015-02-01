@@ -19,10 +19,14 @@ int main(int argc, const char * argv[]) {
         for (int i = 0; i < 10; i++){
         [items addObject:[BNRItem randomItem]];
         }
-                
+        
+        
         for (NSString *item in items){
         NSLog(@"%@", item);
         }
+        
+        NSLog(@"%@", items[10]); //exception will be thrown
+        
         //Destroy the mutabe array object
         items = nil;
         
