@@ -71,6 +71,11 @@
     return newItem;
 }
 
+- (void)setContainedItem:(BNRItem *)containedItem
+{
+    _containedItem = containedItem;
+    self.containedItem.container = self;
+}
 
 // Designated initializer for BNRItem
 - (instancetype)initWithItemName:(NSString *)name
