@@ -18,13 +18,13 @@
     
 }
 
-@property BNRItem *containedItem;
-@property BNRItem *container;
+@property (nonatomic, strong) BNRItem *containedItem;
+@property (nonatomic, weak) BNRItem *container;
 
-@property NSString *itemName;
-@property NSString *serialNumber;
-@property int valueInDollars;
-@property NSDate *dateCreated;
+@property (nonatomic) NSString *itemName;
+@property (nonatomic) NSString *serialNum	ber;
+@property (nonatomic) int valueInDollars;
+@property (nonatomic, readonly, strong) NSDate *dateCreated;
 
 // Class Methods (with the + sign)
 + (instancetype)randomItem;
